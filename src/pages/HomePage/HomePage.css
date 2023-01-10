@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #223344;
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.welcome {
+  height: 350px;
+  background-color: #a4d2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.go-list-btn {
+  display: flex;
+  justify-content: center;
+  background: #35c7d1;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.go-list-btn:hover {
+  background: #1f878f;
+}
