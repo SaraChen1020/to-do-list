@@ -1,14 +1,3 @@
-.navbar {
-  background-color: #223344;
-  height: 100px;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 .welcome {
   height: 350px;
   background-color: #a4d2f8;
@@ -33,6 +22,76 @@
   font-weight: bold;
 }
 
-.go-list-btn:hover {
-  background: #1f878f;
+.go-list-btn:hover,
+.submit-btn:hover {
+  background: #fcd68f;
+  color: #f16b4a;
+}
+
+.signin-signup {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #dcdee0;
+  width: 500px;
+  height: 50px;
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.signup,
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: inherit;
+}
+
+.signup {
+  border-right: 0.5px solid #dcdee0;
+}
+
+.active {
+  background-color: #fce6be;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.mail,
+.password {
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid #e17055;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: center;
+  background: #f16b4a;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px auto;
 }

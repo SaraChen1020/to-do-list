@@ -11,22 +11,59 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background-color: rgb(255, 239, 220);
+}
+
+a {
+  text-decoration: none;
+  color: #f16b4a;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  height: 100px;
+  width: 800px;
+  background-color: #ffeaa7;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #f16b4a;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex: auto;
+}
+
+.section div {
+  border: 0.5px solid #f16b4a;
+  padding: 2px;
+  font-size: 25px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.section div:hover {
+  background-color: #f16b4a;
+  color: white;
 }
 
 /*!***********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/HomePage/HomePage.css ***!
   \***********************************************************************************/
-.navbar {
-  background-color: #223344;
-  height: 100px;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 .welcome {
   height: 350px;
   background-color: #a4d2f8;
@@ -51,24 +88,83 @@ body {
   font-weight: bold;
 }
 
-.go-list-btn:hover {
-  background: #1f878f;
+.go-list-btn:hover,
+.submit-btn:hover {
+  background: #fcd68f;
+  color: #f16b4a;
+}
+
+.signin-signup {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #dcdee0;
+  width: 500px;
+  height: 50px;
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.signup,
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: inherit;
+}
+
+.signup {
+  border-right: 0.5px solid #dcdee0;
+}
+
+.active {
+  background-color: #fce6be;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.mail,
+.password {
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid #e17055;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: center;
+  background: #f16b4a;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px auto;
 }
 
 /*!***********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/ListPage/ListPage.css ***!
   \***********************************************************************************/
-.title {
-  height: 100px;
-  background-color: #ffeaa7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  color: #f16b4a;
-}
-
 .back-home-btn {
   display: flex;
   justify-content: center;
@@ -96,7 +192,7 @@ body {
   font-weight: bold;
 }
 
-input {
+.add-list {
   width: 250px;
   height: 40px;
   border-radius: 5px;
@@ -128,7 +224,7 @@ input {
   padding-top: 20px;
 }
 
-.item {
+.items {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;

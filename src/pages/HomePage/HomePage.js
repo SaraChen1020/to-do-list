@@ -1,20 +1,17 @@
 import React from "react";
-import NavBar from "./components/navbar";
-import Welcome from "./components/welcome";
+import { Link } from "react-router-dom";
+import SignIn from "./components/signin";
 import "./HomePage.css";
 
-const HomePage = ({ setPage }) => {
-  function changeToListPage() {
-    setPage(false);
-  }
-
+const HomePage = ({ user }) => {
   return (
     <>
-      <NavBar />
-      <Welcome />
-      <button className="go-list-btn" onClick={changeToListPage}>
-        點此開始
-      </button>
+      {!user && <SignIn />}
+      {user && (
+        <Link to="/list">
+          <button className="go-list-btn">點此開始</button>
+        </Link>
+      )}
     </>
   );
 };
