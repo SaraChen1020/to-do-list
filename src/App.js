@@ -1,16 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import ListPage from "./pages/ListPage/ListPage";
+import NavBar from "./pages/components/navbar";
+import { auth } from "./utils/firebase";
 
 function App() {
-  const [page, setPage] = useState(true);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    auth.onAuthStateChanged((currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
 
   return (
-    <div className="app">
-      {page && <HomePage setPage={setPage} />}
-      {!page && <ListPage setPage={setPage} />}
-    </div>
+    <BrowserRouter>
+      <NavBar user={user} />
+      <Routes>
+        <Route path="/" element={<HomePage user={user} />} />
+        <Route path="/list" element={<ListPage user={user} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
