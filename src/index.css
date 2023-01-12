@@ -39,18 +39,22 @@ a {
 }
 
 .section {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   flex: auto;
+  height: 100%;
+  position: relative;
 }
 
 .section div {
+  position: absolute;
   border: 0.5px solid #f16b4a;
   padding: 2px;
-  font-size: 25px;
-  margin: 0 20px;
+  font-size: 20px;
+  margin-right: 20px;
   cursor: pointer;
+  bottom: 15px;
+  right: 0;
 }
 
 .section div:hover {

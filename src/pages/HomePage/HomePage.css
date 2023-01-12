@@ -11,7 +11,7 @@
 .go-list-btn {
   display: flex;
   justify-content: center;
-  background: #35c7d1;
+  background: #f7c363;
   color: #fff;
   padding: 10px;
   border: 0;
@@ -20,12 +20,12 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .go-list-btn:hover,
 .submit-btn:hover {
-  background: #fcd68f;
-  color: #f16b4a;
+  background: #f16b4a;
 }
 
 .signin-signup {
@@ -33,13 +33,14 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
-  border: 0.5px solid #dcdee0;
+  /* border: 0.5px solid #e17055; */
   width: 500px;
   height: 50px;
   margin: 20px auto;
   text-align: center;
   align-items: center;
   border-radius: 5px;
+  color: #963f25;
 }
 
 .signup,
@@ -49,10 +50,19 @@
   justify-content: center;
   width: 50%;
   height: inherit;
+  cursor: pointer;
 }
 
 .signup {
-  border-right: 0.5px solid #dcdee0;
+  border-top: 0.5px solid #e17055;
+  border-bottom: 0.5px solid #e17055;
+  border-left: 0.5px solid #e17055;
+  border-radius: 5px 0 0 5px;
+}
+
+.signin {
+  border: 0.5px solid #e17055;
+  border-radius: 0 5px 5px 0;
 }
 
 .active {
@@ -65,6 +75,7 @@ form {
   font-size: 18px;
   font-weight: bold;
   padding: 10px 0;
+  color: #963f25;
 }
 
 .mail,
